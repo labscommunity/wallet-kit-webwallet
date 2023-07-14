@@ -2,12 +2,10 @@
 # yarn lockfile v1
 
 
-"@arweave-wallet-kit/browser-wallet-strategy@^0.0.1-beta.0":
-  version "0.0.1-beta.0"
-  resolved "https://registry.yarnpkg.com/@arweave-wallet-kit/browser-wallet-strategy/-/browser-wallet-strategy-0.0.1-beta.0.tgz#e21f30d553eaeebb443663cebf3a51bf6379a00c"
-  integrity sha512-FrNnMrMNuOOZyPywGXgBmyvmEyseQotToUhoJ4clo4oeuQVP7XrS9otK2TgcWYH8JmimgFjKX3Qpg1kz1C6vcA==
-  dependencies:
-    "@arweave-wallet-kit/core" "^0.0.1-beta.1"
+"@arweave-wallet-kit/browser-wallet-strategy@^0.0.1-beta.1":
+  version "0.0.1-beta.1"
+  resolved "https://registry.yarnpkg.com/@arweave-wallet-kit/browser-wallet-strategy/-/browser-wallet-strategy-0.0.1-beta.1.tgz#be72ab20b64f62ee140d94a7863e4195e2a41fd7"
+  integrity sha512-MkIcK8vV2rB4g90up4afA8R8H1zboAis5G0mlEG6l2wIE6tvKrgNk4sXstNlzsPTL2dMl8BaY7eoWtqycCqf2w==
 
 "@arweave-wallet-kit/core@^0.0.1-beta.1":
   version "0.0.1-beta.1"

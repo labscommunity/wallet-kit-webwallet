@@ -29,6 +29,8 @@
     }
   },
   "devDependencies": {
+    "@arweave-wallet-kit/browser-wallet-strategy": "^0.0.1-beta.1",
+    "@arweave-wallet-kit/core": "^0.0.1-beta.1",
     "@types/node": "^20.4.2",
     "arweave": "^1.14.0",
     "arweave-wallet-connector": "^1.0.2",
@@ -37,11 +39,9 @@
     "vite": "^4.4.3",
     "vite-plugin-dts": "^3.2.0"
   },
-  "dependencies": {
-    "@arweave-wallet-kit/browser-wallet-strategy": "^0.0.1-beta.0",
-    "@arweave-wallet-kit/core": "^0.0.1-beta.1"
-  },
   "peerDependencies": {
+    "@arweave-wallet-kit/browser-wallet-strategy": ">= 0.0.1-beta.1 < 2",
+    "@arweave-wallet-kit/core": ">= 0.0.1-beta.1 < 2",
     "arweave-wallet-connector": ">= 1.0.2 < 2"
   }
 }
