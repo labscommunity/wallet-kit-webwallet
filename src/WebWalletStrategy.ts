@@ -25,17 +25,29 @@ export default class WebWalletStrategy
   public url = defaultConfig.customInterfaceURL;
 
   public instance = new ArweaveWebWallet();
-  public instanceURL = "arweave.app";
+  public instanceURL = defaultConfig.url;
 
   constructor(config?: WebWalletConfig) {
     super();
 
     // setup with config
     if (config) {
-      
+      this.name = config.name;
+      this.description = config.description;
+      this.theme = config.theme || defaultConfig.theme;
+      this.logo = config.logo || defaultConfig.logo;
+      this.instanceURL = config.url;
+      this.url = config.customInterfaceURL || "http://" + config.url;
     }
 
+    // update connector instance
     this.instance.setUrl(this.instanceURL);
+
+    // if it is not the default url, we need
+    // a custom ID for the strategy to work
+    if (this.instanceURL !== defaultConfig.url) {
+      this.id = this.id + this.instanceURL;
+    }
   }
 
   public async isAvailable() {
@@ -54,7 +66,7 @@ export default class WebWalletStrategy
   ): Promise<void> {
     if (gateway) {
       console.warn(
-        "[Arweave Wallet Kit] Arweave.app does not support custom gateway connection yet."
+        "[Arweave Wallet Kit] The WebWallets API does not support custom gateway connection yet."
       );
     }
 
