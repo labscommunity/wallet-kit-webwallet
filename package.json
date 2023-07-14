@@ -1,0 +1,47 @@
+{
+  "name": "@arweave-wallet-kit/webwallet-strategy",
+  "version": "0.0.1-beta.0",
+  "description": "Arweave.app strategy for the Arweave Wallet Kit",
+  "repository": "https://github.com/labscommunity/wallet-kit-webwallet",
+  "author": "Marton Lederer <marton@lederer.hu>",
+  "license": "MIT",
+  "private": false,
+  "type": "module",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "fmt": "prettier . --write"
+  },
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/index.umd.js",
+  "module": "./dist/index.es.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.es.js",
+      "require": "./dist/index.umd.js"
+    }
+  },
+  "devDependencies": {
+    "@types/node": "^20.4.2",
+    "arweave": "^1.14.0",
+    "arweave-wallet-connector": "^1.0.2",
+    "prettier": "^3.0.0",
+    "typescript": "^5.1.6",
+    "vite": "^4.4.3",
+    "vite-plugin-dts": "^3.2.0"
+  },
+  "dependencies": {
+    "@arweave-wallet-kit/browser-wallet-strategy": "^0.0.1-beta.0",
+    "@arweave-wallet-kit/core": "^0.0.1-beta.1"
+  },
+  "peerDependencies": {
+    "arweave-wallet-connector": ">= 1.0.2 < 2"
+  }
+}
